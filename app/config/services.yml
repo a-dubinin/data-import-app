@@ -1,0 +1,4 @@
+services:
+    doctrine.entity_manager:
+        class: Doctrine\ORM\EntityManagerInterface
+        factory: ["@doctrine", getManager]
